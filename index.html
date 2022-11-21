@@ -4,7 +4,8 @@
     <title>Capacitación paquete calidad</title>
     <meta charset="utf-8" />
     <meta name="author" content="" />
-    <meta name="date" content="2022-08-31" />
+    <meta name="date" content="2022-11-21" />
+    <script src="intro_git_files/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
@@ -26,7 +27,7 @@ class: center, middle
 
 ## Proyecto estratégico Metodologías y Ciencia de Datos para la Producción Estadística
 
-### Septiembre 2022
+### Noviembre 2022
 
 
 
@@ -245,11 +246,22 @@ background-position: 100% 0%
 
 --
 
+- Trabajo con Rproject
+
+
+--
+
 **MUY IMPORTANTE**: 
 
 - Deben trabajar desde sus computadores personales
 
 - Deben crear una cuenta en *gitlab*
+
+--
+
+**Objetivo de la clase**
+
+- Quedar habilitado en el uso básico de git (git clone, git push, git pull)
 
 ---
 
@@ -273,13 +285,10 @@ Funciona como una máquina del tiempo
 
 - Nos protege de fallas en el disco duro
 
-.pull-left[
+.center[
 &lt;img src="imagenes/git.png" width="180" /&gt;
 ]
 
-.pull-right[
-&lt;img src="imagenes/gitlab.png" width="200" /&gt;
-]
 
 
 ---
@@ -420,6 +429,19 @@ background-position: 100% 0%
 
 ### Varias personas aportan a un mismo repositorio
 
+
+.pull-left[
+&lt;img src="imagenes/logos.png" width="400" /&gt;
+]
+
+--
+
+.pull-right[
+&lt;img src="imagenes/logo_distinto.png" width="700" /&gt;
+]
+
+
+
 ---
 background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
@@ -506,9 +528,6 @@ Existe un administrador encargado de unir (*merge*) las contribuciones a la rama
 - Resuelve conflictos
 
 
---
-
-### Veamos un ejemplo 
 
 ---
 background-image: url("imagenes/fondo2.PNG")
@@ -519,9 +538,12 @@ background-position: 100% 0%
 
 
 .center[
-&lt;img src="imagenes/arbol3.jpg" width="550" /&gt;
+&lt;img src="imagenes/arbol3.jpg" width="500" /&gt;
 ]
 
+--
+
+### Veamos un ejemplo 
 
 
 ---
@@ -717,7 +739,7 @@ https://github.com/clases-r-intermedio/0_intro_git.git
 
 - Clonen el repositorio que usamos para hacer la demostración
 
-https://gitlab.com/inesscc/demostracion_git_censo.git
+https://gitlab.com/inesscc/demostracion_git_intermedio.git
 
 - Creen una rama que tenga por nombre la primera letra de su nombre y la primera letra de su apellido. Ejemplo: Ignacio Agloni debe crear la rama "ia"
 
@@ -725,6 +747,73 @@ https://gitlab.com/inesscc/demostracion_git_censo.git
 
 - Empujen la rama al repositorio y hagan una solicitud de merge hacia master
 
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Problema de las rutas
+
+Existen varias razones para no usar rutas absolutas:
+
+- Dificultan el trabajo colaborativo
+
+- Hacen más difícil la reproducibilidad
+
+- Son un escollo al momento de compartir nuestro trabajo 
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Trabajo con proyectos
+
+- Durante este curso evitaremos el uso de rutas absolutas, como
+
+
+```r
+data &lt;- read_csv("/home/klaus/ine/capacitaciones/r_intermedio/0_intro_git/data/example_file.csv")
+```
+
+o esto...
+
+
+```r
+setwd("/home/klaus/ine/capacitaciones/r_intermedio/0_intro_git/data")
+data &lt;- read_csv("example_file.csv")
+```
+
+--
+
+- Usaremos rutas relativas 
+
+
+```r
+data &lt;- read_csv("data/example_file.csv")
+```
+
+--
+
+Para esto, los proyectos de RStudio son muy útiles. 
+
+---
+background-image: url("imagenes/fondo2.PNG")
+background-size: contain;
+background-position: 100% 0%
+
+# Trabajo con proyectos
+
+- El archivo con extensión .Rproj almacena información sobre el directorio de trabajo
+
+--
+
+- Nos permite navegar de manera sencilla dentro de nuestro proyecto
+
+--
+
+- Hace más sencillo compartir nuestro trabajo 
 
 
 ---
@@ -751,6 +840,7 @@ class: center, middle
 ## Proyecto estratégico Metodologías y Ciencia de Datos para la Producción Estadística
 
 ### Septiembre 2022
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
