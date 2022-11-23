@@ -1,19 +1,16 @@
----
-title: "Capacitación r intermedio"
-subtitle: "calidad"
-author: 
-date: '`r Sys.Date()`'
-output:
-  xaringan::moon_reader:
-    seal: false
-    #lib_dir: libs
-    css: xaringan-themer.css
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: False
-      ratio: '13:9'
----
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Capacitación r intermedio</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="" />
+    <meta name="date" content="2022-11-23" />
+    <script src="intro_git_files/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
 
 
 
@@ -23,7 +20,7 @@ class: center, middle
 .linea-inferior[]
 
 
-<img src="imagenes/logo_portada2.png" width="200" />
+&lt;img src="imagenes/logo_portada2.png" width="200" /&gt;
 
 
 ## Capacitación en R y herramientas de productividad - nivel intermedio
@@ -33,19 +30,9 @@ class: center, middle
 ### Noviembre 2022
 
 
-```{r setup, include=FALSE}
-options(htmltools.dir.version = FALSE)
-knitr::opts_chunk$set(message = FALSE) 
-```
 
-```{r xaringan-themer, include=FALSE, warning=FALSE}
-library(xaringanthemer)
-#style_duo_accent(
- # primary_color = "#1381B0",
-  #secondary_color = "#FF961C",
-  #inverse_header_color = "#FFFFFF"
-#)
-```
+
+
 
 
 
@@ -55,7 +42,7 @@ background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
 background-position: 100% 0%
 
-# PE M&CD 
+# PE M&amp;CD 
 
 Nuevo proyecto estratégico Metodología y Ciencia de Datos para la Producción Estadística.
 
@@ -217,9 +204,9 @@ Manejo de condicionales (if, else, if else)
 
 --
 
-```{r, eval=FALSE}
 
-contar_pares <- function(vector) {
+```r
+contar_pares &lt;- function(vector) {
   contar = 0
   for (i in vector) {
     if (i %% 2 == 0) {
@@ -230,8 +217,6 @@ contar_pares <- function(vector) {
 }
 
 contar_pares(1:9)
-
-
 ```
 
 
@@ -301,7 +286,7 @@ Funciona como una máquina del tiempo
 - Nos protege de fallas en el disco duro
 
 .center[
-<img src="imagenes/git.png" width="180" />
+&lt;img src="imagenes/git.png" width="180" /&gt;
 ]
 
 
@@ -316,7 +301,7 @@ background-position: 100% 0%
 
 
 .pull-center[
-<img src="imagenes/esquema_git.png" width="800" />
+&lt;img src="imagenes/esquema_git.png" width="800" /&gt;
 ]
 
 
@@ -330,7 +315,7 @@ background-position: 100% 0%
 
 
 .pull-center[
-<img src="imagenes/esquema_reproducibilidad.png" width="800" />
+&lt;img src="imagenes/esquema_reproducibilidad.png" width="800" /&gt;
 ]
 
 
@@ -351,7 +336,7 @@ background-position: 100% 0%
 Git nos permite navegar de manera "sencilla" por las distintas versiones de un archivo
 
 .center[
-<img src="imagenes/diagrama.png" width="300" />
+&lt;img src="imagenes/diagrama.png" width="300" /&gt;
 ]
 
 --
@@ -359,7 +344,7 @@ Git nos permite navegar de manera "sencilla" por las distintas versiones de un a
 ### Podemos rastrear dónde y cuándo se producen los errores
 
 .center[
-<img src="imagenes/pikachu.png" width="250" />
+&lt;img src="imagenes/pikachu.png" width="250" /&gt;
 ]
 
 
@@ -373,7 +358,7 @@ background-position: 100% 0%
 # Estados en Git
 
 .center[
-<img src="imagenes/estados-git.png" width="500" />
+&lt;img src="imagenes/estados-git.png" width="500" /&gt;
 ]
 
 Tenemos 3 estados para nuestros archivos:
@@ -417,7 +402,7 @@ background-position: 100% 0%
 # Principales conceptos
 
 .center[
-<img src="imagenes/diagrama-git.png" width="600" />
+&lt;img src="imagenes/diagrama-git.png" width="600" /&gt;
 ]
 
 --
@@ -437,7 +422,7 @@ background-position: 100% 0%
 # Repositorio remoto
 
 .center[
-<img src="imagenes/diagrama-colaborativo.png" width="600" />
+&lt;img src="imagenes/diagrama-colaborativo.png" width="600" /&gt;
 ]
 
 --
@@ -446,13 +431,13 @@ background-position: 100% 0%
 
 
 .pull-left[
-<img src="imagenes/logos.png" width="400" />
+&lt;img src="imagenes/logos.png" width="400" /&gt;
 ]
 
 --
 
 .pull-right[
-<img src="imagenes/logo_distinto.png" width="700" />
+&lt;img src="imagenes/logo_distinto.png" width="700" /&gt;
 ]
 
 
@@ -466,7 +451,7 @@ background-position: 100% 0%
 
 
 .center[
-<img src="https://i.gifer.com/2DAN.gif" width="450" />
+&lt;img src="https://i.gifer.com/2DAN.gif" width="450" /&gt;
 ]
 
 
@@ -553,7 +538,7 @@ background-position: 100% 0%
 
 
 .center[
-<img src="imagenes/arbol3.jpg" width="500" />
+&lt;img src="imagenes/arbol3.jpg" width="500" /&gt;
 ]
 
 --
@@ -568,13 +553,13 @@ background-position: 100% 0%
 # ¿Cómo interactuar con git?
 
 .center[
-<img src="imagenes/gitkraken_gui.png" width="500" />
+&lt;img src="imagenes/gitkraken_gui.png" width="500" /&gt;
 ]
 
 --
 
 .center[
-<img src="imagenes/rstudio_gui.png" width="500" />
+&lt;img src="imagenes/rstudio_gui.png" width="500" /&gt;
 ]
 
 
@@ -588,13 +573,13 @@ background-position: 100% 0%
 
 
 .center[
-<img src="imagenes/linea_comandos_ubuntu.png" width="600" />
+&lt;img src="imagenes/linea_comandos_ubuntu.png" width="600" /&gt;
 ]
 
 --
 
 .center[
-<img src="imagenes/linea_comandos_rstudio.png" width="600" />
+&lt;img src="imagenes/linea_comandos_rstudio.png" width="600" /&gt;
 ]
 
 ---
@@ -699,23 +684,26 @@ background-position: 100% 0%
 
 - Durante este curso evitaremos el uso de rutas absolutas, como
 
-```{r, eval=F}
-data <- read_csv("/home/klaus/ine/capacitaciones/r_intermedio/0_intro_git/data/example_file.csv")
+
+```r
+data &lt;- read_csv("/home/klaus/ine/capacitaciones/r_intermedio/0_intro_git/data/example_file.csv")
 ```
 
 o esto...
 
-```{r, eval=FALSE}
+
+```r
 setwd("/home/klaus/ine/capacitaciones/r_intermedio/0_intro_git/data")
-data <- read_csv("example_file.csv")
+data &lt;- read_csv("example_file.csv")
 ```
 
 --
 
 - Usaremos rutas relativas 
 
-```{r, eval=FALSE}
-data <- read_csv("data/example_file.csv")
+
+```r
+data &lt;- read_csv("data/example_file.csv")
 ```
 
 --
@@ -757,7 +745,7 @@ class: center, middle
 
 .linea-superior[]
 .linea-inferior[]
-<img src="imagenes/logo_portada2.png" width="200" />
+&lt;img src="imagenes/logo_portada2.png" width="200" /&gt;
 
 ## Capacitación en R y herramientas de productividad - nivel intermedio
 
@@ -765,3 +753,140 @@ class: center, middle
 
 ### Noviembre 2022
 
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "13:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
