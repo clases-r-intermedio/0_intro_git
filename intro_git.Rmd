@@ -103,7 +103,7 @@ background-position: 100% 0%
 
 # Organización de la capacitación
 
-La capacitación se compone de **5 sesiones de 3 horas** y esta **sesión 0 de 2 horas**
+La capacitación se compone de **6 sesiones de 3 horas** 
 
 --
 
