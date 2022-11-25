@@ -57,7 +57,7 @@ background-position: 100% 0%
 
 # PE M&CD 
 
-Nuevo proyecto estratégico Metodología y Ciencia de Datos para la Producción Estadística.
+Nuevo proyecto estratégico Metodologías y Ciencia de Datos para la Producción Estadística.
 
 --
 
@@ -80,20 +80,31 @@ background-position: 100% 0%
 
 Al finalizar la capacitación se espera que las/os participantes:
 
-- Hayan aprendido buenas prácticas de codificación, logrando rutinas ordenadas, eficientes y bien documentadas.
+- Estén habilitadas/os para trabajar en un rol de desarrollador dentro de un proyecto Git
 
 --
 
-- Sean capaces de generar rutinas de código reproducible.
+- Conozcan herramientas para mejorar la reproducibilidad del trabajo con datos
 
 --
 
-- Logren hacer un uso eficiente de los recursos de *hardware* disponibles.
+- Cuenten con herramientas para poner en práctica una modalidad de trabajo basada en programación funcional
 
 --
 
-- Sean capaces de resolver desafíos prácticos de la producción estadística utilizando herramientas que aumenten su productividad.
+- Aprendan herramientas básicas para trabajar con datos de texto
 
+--
+
+- Conozcan técnicas de programación basadas en evaluaciones no estándar (NSE)
+
+--
+
+- Sean capaces de abordar de manera eficiente tareas iterativas
+
+--
+
+- Conozcan herramientas básicas para trabajar con grandes volúmenes de datos en formato tabla
 
 ---
 
@@ -136,7 +147,7 @@ background-position: 100% 0%
 
 # Organización de la capacitación
 
-Los desafíos evaluados (sesión 2) y el trabajo final debe ser desarrollado **individualmente**.
+Los desafíos evaluados (sesión 2) y el trabajo final deben ser desarrollados **individualmente**.
 
 --
 
@@ -144,7 +155,7 @@ Para el resto de los desafíos pueden asociarse si lo desean.
 
 --
 
-El plazo para la entrega de estos desafíos es el **día antes de la siguente sesión de capacitación, a las 12:00 hrs**. En ese momento se subirá a nuestro canal en Teams la solución a los ejercicios.
+El plazo para la entrega de estos desafíos es el **día antes de la siguente sesión de capacitación, a las 12:00 hrs**. En ese momento se subirá a nuestro canal en Teams la solución de los ejercicios.
 
 --
 
@@ -175,7 +186,7 @@ Se permitirá justificar inasistencias por uso de permiso administrativo, feriad
 - Deben obtener una calificación mínima de 4 (en una escala de 1 a 7).
 - Debe ser realizada de **forma individual**.
 - También se evaluará el desafío de la sesión 2.
-- NF = Tarea_S2 *0.2 + TF (0.8)
+- NF = Tarea_S2 * 0.2 + TF * (0.8)
 
 ---
 
@@ -186,18 +197,17 @@ background-position: 100% 0%
 # Contenidos de la capacitación
 
 ### Contenidos:
-Sesión 0: Introducción a GIT
+Sesión 0: Introducción a git y herramientas de trabajo reproducible
 
 Sesión 1: Tópicos avanzados de dplyr y funciones
 
 Sesión 2: NSE y programación funcional
 
-Sesión 3: Paralelización
+Sesión 3: Expresiones regulares
 
-Sesión 4: data.table
+Sesión 4: Manipulación de grandes volúmenes de datos con data.table
 
-Sesión 5: Sesión de práctica
-
+Sesión 5: Manos a la obra: sesión práctica
 
 ---
 background-image: url("imagenes/fondo2.PNG")
@@ -206,14 +216,10 @@ background-position: 100% 0%
 
 # Requisitos básicos
 
-
-Manejo de ciclos (for, while)
-
-Manejo de paquete dplyr
-
-Conocimiento básico en creación de funciones
-
-Manejo de condicionales (if, else, if else)
+Estructuras condicionales (if, else, else if)
+Loops for y while
+Dominio sólido de dplyr
+Desarrollo de funciones
 
 --
 
@@ -245,7 +251,7 @@ background-position: 100% 0%
 
 # Contenidos de la clase
 
-- ¿Qué es git y para qué sirve?
+- ¿Qué es Git y para qué sirve?
 
 --
 
@@ -475,7 +481,7 @@ Los commit nos permiten sujetarnos a la roca
 
 --
 
-En terreno peligro, es mejor hacer más commits.  
+En terreno peligroso, es mejor hacer más commits.  
 
 --
 
@@ -635,7 +641,7 @@ background-position: 100% 0%
 
 **git commit -m "mensaje personalizado"**: confirmar cambios
 
-**git push rama**: empujar a rama remota
+**git push nombre_rama**: empujar a rama remota
 
 **git clone url_repositorio**: clonar un repositorio
 
@@ -670,7 +676,7 @@ https://gitlab.com/inesscc/demostracion_git_intermedio.git
 
 - Creen una rama que tenga por nombre la primera letra de su nombre y la primera letra de su apellido. Ejemplo: Ignacio Agloni debe crear la rama "ia"
 
-- Generen un archivo que tenga por nombres sus iniciales. Pueden completar lo que quieran dentro de él.
+- "Generen un archivo que tenga el mismo nombre que su rama. Pueden completar lo que quieran dentro de él.
 
 - Empujen la rama al repositorio y hagan una solicitud de merge hacia master
 
@@ -738,6 +744,13 @@ background-position: 100% 0%
 --
 
 - Hace más sencillo compartir nuestro trabajo 
+
+
+--
+
+.center[
+### Veamos un ejemplo
+]
 
 
 ---
