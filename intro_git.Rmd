@@ -16,7 +16,7 @@ output:
 ---
 
 
-
+name:portada
 class: center, middle
 
 .linea-superior[]
@@ -30,7 +30,7 @@ class: center, middle
 
 ## Proyecto estratégico Metodologías y Ciencia de Datos para la Producción Estadística
 
-### Noviembre 2022
+### Julio 2023
 
 
 ```{r setup, include=FALSE}
@@ -50,31 +50,20 @@ library(xaringanthemer)
 
 
 ---
-
+name:diapo-basica
 background-image: url("imagenes/fondo2.PNG")
 background-size: contain;
 background-position: 100% 0%
-
-# PE M&CD 
-
-Nuevo proyecto estratégico Metodologías y Ciencia de Datos para la Producción Estadística.
-
---
-
-Uno de los 9 PE que están actualmente en formulación para el periodo estratégico 2022-2026.
-
---
-
-Este proyecto busca: 
-
-**"Proveer a la institución de metodologías, estándares, desarrollos y competencias que permitan automatizar, ordenar e innovar en la producción estadística y áreas de soporte del negocio, permitiendo generar conocimiento técnico para fortalecer y hacer más eficiente la producción estadística de la institución, a través de estrategias de ciencia de datos e innovación en metodologías estadísticas".**
-
 
 ---
+template:diapo-basica
 
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
+# Proyecto Ciencia de Datos
+
+Esta actividad busca generar capacidades
+
+---
+template:diapo-basica
 
 # Objetivos del aprendizaje 
 
@@ -108,9 +97,9 @@ Al finalizar la capacitación se espera que las/os participantes:
 
 ---
 
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
+template:diapo-basica
+
+
 
 # Organización de la capacitación
 
@@ -141,9 +130,9 @@ Compartiremos cada presentación antes al inicio de la sesión. Si existen corre
 Al finalizar cada sesión se les presentará un desafío para resolver durante la semana. Estos desafíos no tienen impacto en la evaluación del curso, salvo el **desafío de la sesión 2, que tendrá una evaluación**.
 
 ---
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
+template:diapo-basica
+
+
 
 # Organización de la capacitación
 
@@ -164,9 +153,9 @@ El objetivo de pedirles los scripts es permitirnos conocer sus avances, reforzar
 
 
 ---
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
+template:diapo-basica
+
+
 
 # Asistencia y evaluación del curso
 
@@ -190,9 +179,9 @@ Se permitirá justificar inasistencias por uso de permiso administrativo, feriad
 
 ---
 
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
+template:diapo-basica
+
+
 
 # Contenidos de la capacitación
 
@@ -210,16 +199,20 @@ Sesión 4: Manipulación de grandes volúmenes de datos con data.table
 Sesión 5: Manos a la obra: sesión práctica
 
 ---
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
+template:diapo-basica
+
+
 
 # Requisitos básicos
 
 Estructuras condicionales (if, else, else if)
+
 Loops for y while
+
 Dominio sólido de dplyr
+
 Desarrollo de funciones
+
 
 --
 
@@ -245,11 +238,16 @@ contar_pares(1:9)
 
 
 ---
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
+template:diapo-basica
+
+
 
 # Contenidos de la clase
+
+
+- Proyectos de R y rutas relativas
+
+--
 
 - ¿Qué es Git y para qué sirve?
 
@@ -259,15 +257,11 @@ background-position: 100% 0%
 
 --
 
-- Demostración de cómo funciona un repositorio colaborativo
+- Uso de ramas
 
 --
 
-- Clonaremos un repositorio
-
---
-
-- Trabajo con Rproject
+- Ejercicio práctico
 
 
 --
@@ -276,7 +270,7 @@ background-position: 100% 0%
 
 - Deben trabajar desde sus computadores personales
 
-- Deben crear una cuenta en *gitlab*
+- Deben crear una cuenta en *github*
 
 --
 
@@ -284,407 +278,12 @@ background-position: 100% 0%
 
 - Quedar habilitado en el uso básico de git (git clone, git push, git pull)
 
----
-
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# ¿Qué es Git y para qué sirve?
-
-Es un sistema de control de versiones (VCS)
-
-Permite que varias personas trabajen en un mismo proyecto sin molestarse unos a otros
-
-Funciona como una máquina del tiempo 
-
-- En git nada desaparece
-
-- Siempre es posible volver a un estado anterior
-
-- Nos protege de nuestra propia estupidez
-
-- Nos protege de fallas en el disco duro
-
-.center[
-<img src="imagenes/git.png" width="180" />
-]
-
 
 
 ---
+template:diapo-basica
 
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
 
-# Ejemplo de uso 
-
-
-.pull-center[
-<img src="imagenes/esquema_git.png" width="800" />
-]
-
-
----
-
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Ejemplo de uso 
-
-
-.pull-center[
-<img src="imagenes/esquema_reproducibilidad.png" width="800" />
-]
-
-
-Nos acercamos a la reproducibilidad
-
---
-
-Aún nos falta manejar las dependencias 
-
-
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Principales conceptos
-
-Git nos permite navegar de manera "sencilla" por las distintas versiones de un archivo
-
-.center[
-<img src="imagenes/diagrama.png" width="300" />
-]
-
---
-
-### Podemos rastrear dónde y cuándo se producen los errores
-
-.center[
-<img src="imagenes/pikachu.png" width="250" />
-]
-
-
-
----
-
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Estados en Git
-
-.center[
-<img src="imagenes/estados-git.png" width="500" />
-]
-
-Tenemos 3 estados para nuestros archivos:
-
-- Modificado
-
-- "En escena" (*staging area*)
-
-- Confirmado o comprometido (*committed*)
-
----
-
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Principales conceptos
-
-Ciclos sucesivos de *modificar, poner en escena y confirmar* van generando el historial de cambios de nuestro repositorio
-
---
-
-Git almacena cada una de las confirmaciones que vamos haciendo
-
---
-
-Si quiero trabajar de manera individual, no necesito más que lo que hemos visto hasta ahora
-
---
-
-**¿Qué pasa si necesito trabajar con más personas?**
-
-
-
----
-
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Principales conceptos
-
-.center[
-<img src="imagenes/diagrama-git.png" width="600" />
-]
-
---
-
-### Git puede funcionar sin problemas de manera local
-
---
-
-### Gitlab se usa para trabajar con más personas
-
-
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Repositorio remoto
-
-.center[
-<img src="imagenes/diagrama-colaborativo.png" width="600" />
-]
-
---
-
-### Varias personas aportan a un mismo repositorio
-
-
-.pull-left[
-<img src="imagenes/logos.png" width="400" />
-]
-
---
-
-.pull-right[
-<img src="imagenes/logo_distinto.png" width="700" />
-]
-
-
-
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Esquema de trabajo en Git
-
-
-.center[
-<img src="https://i.gifer.com/2DAN.gif" width="450" />
-]
-
-
-
-Los commit nos permiten sujetarnos a la roca 
-
---
-
-En terreno peligroso, es mejor hacer más commits.  
-
---
-
-Si nos caemos, tendremos un punto del cual sujetarnos
-
-
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Esquema de trabajo en Git
-
-Cuando tengamos seguridad de que nuestro código funciona, podemos empujar los cambios (*push*)
-
---
-
-En Git gana el que empuja primero
-
---
-
-- Si alguien empuja y altera un archivo en el que estás trabajando localmente, habrán problemas cuando quieras empujar.
-
---
-
-- Si has trabajado localmente y alguien hizo *push*, tendrás problemas al hacer *pull*. 
-
---
-
-**Existen 2 casos felices**:
-
-- Cuando los cambios refieren a archivos diferentes
-
-
---
-
-- Cuando alguien modificó un archivo tuyo, pero no se superpone con tu trabajo (agregar una línea)
-
-
-
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Trabajando con ramas
-
-La forma más segura de trabajar con git es a través de ramas (*branches*)
-
---
-
-Cada desarrollador puede trabajar en una rama independiente, sin molestar a los demás
-
---
-
-Los desarrolladores **en general** no tienen permiso para empujar a la rama master (esto depende del proyecto)
-
---
-
-
-Existe un administrador encargado de unir (*merge*) las contribuciones a la rama central
-
-- Decide si el aporte debe incorporarse 
-
-- Resuelve conflictos
-
-
-
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Trabajando con ramas
-
-
-.center[
-<img src="imagenes/arbol3.jpg" width="500" />
-]
-
---
-
-### Veamos un ejemplo práctico
-
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# ¿Cómo interactuar con git?
-
-.center[
-<img src="imagenes/gitkraken_gui.png" width="500" />
-]
-
---
-
-.center[
-<img src="imagenes/rstudio_gui.png" width="500" />
-]
-
-
-
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# ¿Cómo interactuar con git?
-
-
-.center[
-<img src="imagenes/linea_comandos_ubuntu.png" width="600" />
-]
-
---
-
-.center[
-<img src="imagenes/linea_comandos_rstudio.png" width="600" />
-]
-
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# ¿Recomendación?
-
-### La herramienta que más les acomode
-
---
-
-### La línea de comandos es la herramienta que nosotros veremos
-
---
-
-### No veremos nada sobre interfaces gráficas (GUI)
-
---
-
-### Pueden experimentar con la herramienta que más les acomode
-
---
-
-### Lo más importante son los conceptos
-
-
----
-
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Torpedo
-
-**git add + .**: poner todo en escena
-
-**git commit -m "mensaje personalizado"**: confirmar cambios
-
-**git push nombre_rama**: empujar a rama remota
-
-**git clone url_repositorio**: clonar un repositorio
-
-**git pull nombre_rama**: traer cosas del repositorio
-
-**git checkout nombre_rama**: ir a una rama
-
-**git branch**: ver todas las ramas
-
-**git branch nombre_rama**: crear una rama
-
-
-
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
-
-# Ejercicios
-
-**Ejercicio 1**
-
-Clonen el repositorio de la clase 
-
-https://github.com/clases-r-intermedio/0_intro_git.git
-
-**Ejercicio 2**
-
-- Clonen el repositorio que usamos para hacer la demostración
-
-https://gitlab.com/inesscc/demostracion_git_curso.git
-
-- Creen una rama que tenga por nombre la primera letra de su nombre y la primera letra de su apellido. Ejemplo: Ignacio Agloni debe crear la rama "ia"
-
-- "Generen un archivo que tenga el mismo nombre que su rama. Pueden completar lo que quieran dentro de él.
-
-- Empujen la rama al repositorio y hagan una solicitud de merge hacia master
-
-
----
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
 
 # Problema de las rutas
 
@@ -697,9 +296,9 @@ Existen varias razones para no usar rutas absolutas:
 - Son un escollo al momento de compartir nuestro trabajo 
 
 ---
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
+template:diapo-basica
+
+
 
 # Trabajo con proyectos
 
@@ -729,9 +328,9 @@ data <- read_csv("data/example_file.csv")
 Para esto, los proyectos de RStudio son muy útiles. 
 
 ---
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
+template:diapo-basica
+
+
 
 # Trabajo con proyectos
 
@@ -749,14 +348,621 @@ background-position: 100% 0%
 --
 
 .center[
+
+<!-- EJERCICIO 0 -->
 ### Veamos un ejemplo
 ]
 
 
+
 ---
-background-image: url("imagenes/fondo2.PNG")
-background-size: contain;
-background-position: 100% 0%
+
+template:diapo-basica
+
+
+
+# ¿Qué es Git y para qué sirve?
+
+.center[
+<img src="imagenes/documento_final.gif" width="50%" />
+]
+
+
+---
+
+template:diapo-basica
+
+
+
+# ¿Qué es Git y para qué sirve?
+
+Es un sistema de control de versiones (VCS): nos dice quién hizo qué y cuándo en  nuestro proyecto  
+
+Permite que varias personas trabajen en un mismo proyecto sin molestarse unos a otros
+
+Funciona como una máquina del tiempo 
+
+- Cada cierto tiempo sacamos una "foto" de todos los archivos del proyecto
+
+- Estas fotos no desaparecen
+
+- Siempre es posible volver a una foto anterior
+
+Nos protege:
+
+- De nuestra propia estupidez
+
+- De fallas en el disco duro (podemos sincronizar nuestros cambios en la nube)
+
+.center[
+<img src="imagenes/git.png" width="140" />
+]
+
+
+---
+
+template:diapo-basica
+
+
+
+# ¿Qué es Git y para qué sirve?
+
+
+.pull-center[
+<img src="imagenes/esquema_reproducibilidad.png" width="800" />
+]
+
+
+Nos acercamos a la reproducibilidad
+
+--
+
+Aún nos falta manejar las dependencias 
+
+
+---
+template:diapo-basica
+
+
+
+# Principales conceptos
+
+Git nos permite navegar de manera "sencilla" por las distintas versiones de un archivo
+
+.center[
+<img src="imagenes/diagrama.png" width="300" />
+]
+
+--
+
+### Podemos rastrear dónde y cuándo se producen los errores
+
+.center[
+<img src="imagenes/pikachu.png" width="250" />
+]
+
+
+
+---
+
+template:diapo-basica
+
+
+
+# Estados en Git
+
+.center[
+<img src="imagenes/estados-git.png" width="500" />
+]
+
+Tenemos 3 estados para nuestros archivos:
+
+- Modificado
+
+- "En escena" (*staging area*)
+
+- Confirmado o comprometido (*committed*)
+
+---
+
+template:diapo-basica
+
+
+
+# Principales conceptos
+
+Ciclos sucesivos de *modificar, poner en escena y confirmar* van generando el historial de cambios de nuestro repositorio
+
+--
+
+Cada _commit_ es una foto del estado de nuestros archivos a la que podemos acceder cuando queramos
+
+--
+
+- **NO** podemos acceder a estados intermedios entre dos _commit_
+
+--
+
+- Queremos hacer _commit_ frecuentemente y con un número de cambios manejable
+
+--
+
+Si quiero trabajar de manera individual, no necesito más que lo que hemos visto hasta ahora
+
+--
+
+**¿Qué pasa si necesito trabajar con más personas?**
+
+
+
+---
+
+template:diapo-basica
+
+
+
+# Principales conceptos
+
+.center[
+<img src="imagenes/diagrama-git.png" width="600" />
+]
+
+--
+
+### Git puede funcionar sin problemas de manera local
+
+--
+
+### Gitlab, Github, etc se usan para trabajar con más personas
+
+
+---
+
+template:diapo-basica
+
+
+
+# Principales conceptos
+
+.center[
+<img src="imagenes/flujo_git.png" width="55%" />
+]
+
+
+.right[ <font size="2"> Ilustración por Allison Horst, https://allisonhorst.com/git-github</font> ]
+
+
+---
+template:diapo-basica
+
+
+
+# Repositorio remoto
+
+.center[
+<img src="imagenes/diagrama-colaborativo.png" width="600" />
+]
+
+--
+
+### Varias personas aportan a un mismo repositorio
+
+
+.pull-left[
+<img src="imagenes/logos.png" width="400" />
+]
+
+--
+
+.pull-right[
+<img src="imagenes/logo_distinto.png" width="700" />
+]
+
+
+
+---
+template:diapo-basica
+
+
+
+# Esquema de trabajo en Git
+
+
+.center[
+<img src="https://i.gifer.com/2DAN.gif" width="450" />
+]
+
+
+
+Los commit nos permiten sujetarnos a la roca 
+
+--
+
+En terreno peligroso, es mejor hacer más commits.  
+
+--
+
+Si nos caemos, tendremos un punto del cual sujetarnos
+
+
+
+---
+template:diapo-basica
+
+
+
+# Esquema de trabajo en Git
+
+Luego de hacer nuestros _commit_, usualmente vamos a querer enviarlos al repositorio
+remoto para que el resto pueda verlos a través de un _push_
+
+--
+
+Antes de hacer un _push_, es necesario actualizar nuestro proyecto con los cambios que otros/as colegas puedan haber realizado desde la última vez que nos sincronizamos con el repositorio remoto. Para esto, usamos `git pull`
+
+--
+
+Si es que fue posible traer los cambios remotos **sin problemas** y teniendo seguridad que nuestro código funciona, procedemos a empujar nuestros cambios con un `git push`
+
+--
+
+Por lo tanto, el flujo normal de trabajo es siempre:
+
+
+
+## commit - pull - push
+
+--
+
+<div style="float: left;">
+<img src="imagenes/no_olvidar.png" width="65%"  />
+</div>
+
+
+
+--
+
+<!--  EJERCICIO 1 -->
+
+**Probemos nuestro primer flujo `git`! ** 
+
+
+---
+template: diapo-basica
+
+# ¿Sin problemas?
+
+Al hacer `pull` traemos los cambios que han hecho el resto de colegas a nuestro
+repositorio local y `git` trata de incorporarlo con los `commit` que hemos realizado
+desde la última vez que hicimos `pull`. A esto se le llama `merge`.
+
+--
+
+Si los cambios que existen en nuestros `commit` no tienen intersección con los de
+los `commit` de nuestros colegas, no habrá problema. Dos casos:
+
+--
+
+- Cambios en archivos diferentes
+
+--
+
+- Cambios en el mismo archivo, pero distintas líneas
+
+--
+
+Ahora, si nuestros `commit` y algún `commit` recibido en el `pull` cambian la misma
+línea de un archivo, tendremos .red[problemas]: un conflicto de _merge_.
+
+--
+
+.center[
+<img src="imagenes/git_merge.gif" width="35%" />
+]
+
+--
+
+<!-- EJERCICIO 2 -->
+**Probemos cómo generar y resolver un conflicto de merge**
+
+---
+template:diapo-basica
+
+# Conflicto de merge
+
+<div style="float: left;">
+<img src="imagenes/merge_conflict1.png" width="90%" />
+</div>
+
+
+<-- Su script se verá similar a esto
+
+--
+
+
+
+Básicamente `git` nos muestra cómo están las líneas que tienen cambios simultáneos en nuestro repositorio y en el script en el repositorio remoto. 
+
+Aquí debemos editar el script para que quede funcional, de acuerdo a los objetivos del proyecto y del script. Para esto no existe receta, podrían mantenerse ambos cambios, uno de los dos o ninguno:
+
+--
+
+.center[
+<img src="imagenes/merge_conflict2.png" width="85%" />
+]
+
+--
+
+Luego de editar el script, es necesario realizar un `commit` y luego un `push` con lo que se soluciona el conflicto de `merge`.
+
+--
+
+**Nota importante:** cuando hacemos un `pull` con conflicto de `merge`, nos aparecerán todos los cambios al repositorio que ha habido desde la última vez que hicimos `pull`  en la pestaña Git. Solo debemos preocuparnos por los archivos que aparezcan con un símbolo de “U”, que implican que ese archivo específico tiene conflicto de merge.
+
+
+---
+template:diapo-basica
+
+# Conflicto de merge
+
+Ejemplo de lo anterior:
+
+.center[
+<img src="imagenes/merge_conflict3.png" width="85%" />
+]
+
+La terminal también nos indicará los archivos con conflicto:
+
+.center[
+<img src="imagenes/merge_conflict4.png" width="85%" />
+]
+
+---
+template:diapo-basica
+
+# El árbol de commits
+
+
+<div style="float: right;">
+<img src="imagenes/arbol_commit1.gif" width="80%" />
+</div>
+
+
+.texto-chico[El árbol de commits es una representación visual de la historia de nuestro proyecto.]
+
+--
+
+.texto-chico[Nos muestra cada commit, nos permite acceder a sus contenidos y nos muestra dónde nos encontramos actualmente en la historia del árbol y dónde se encuentran las otras ramas, en caso de existir.] 
+
+--
+
+.texto-chico[**¿Qué es una rama?** ]
+--
+.texto-chico[Simplemente es un puntero a un `commit` específico, que contiene la información de sus ancestros. ]
+
+
+
+
+
+---
+template:diapo-basica
+
+# El árbol de commits
+
+
+<div style="float: right;">
+<img src="imagenes/arbol_commit2.gif" width="80%" />
+</div>
+
+
+.texto-chico[El árbol de commits es una representación visual de la historia de nuestro proyecto.]
+
+
+
+.texto-chico[Nos muestra cada commit, nos permite acceder a sus contenidos y nos muestra dónde nos encontramos actualmente en la historia del árbol y dónde se encuentran las otras ramas, en caso de existir.] 
+
+
+
+.texto-chico[**¿Qué es una rama?** ]
+.texto-chico[Simplemente es un puntero a un `commit` específico, que contiene la información de sus ancestros. ]
+
+
+.texto-chico[ Si nos encontramos parados en una rama y realizamos un `commit` el puntero de la rama se moverá al commit más reciente.]
+
+
+
+---
+template:diapo-basica
+
+# El árbol de commits
+
+
+
+<div style="float: right;">
+<img src="imagenes/arbol_commit3.gif" width="80%" />
+</div>
+
+
+.texto-chico[El árbol de commits es una representación visual de la historia de nuestro proyecto.]
+
+
+
+.texto-chico[Nos muestra cada commit, nos permite acceder a sus contenidos y nos muestra dónde nos encontramos actualmente en la historia del árbol y dónde se encuentran las otras ramas, en caso de existir.] 
+
+
+
+.texto-chico[**¿Qué es una rama?** ]
+.texto-chico[Simplemente es un puntero a un `commit` específico, que contiene la información de sus ancestros. ]
+
+
+.texto-chico[ Si nos encontramos parados en una rama y realizamos un `commit` el puntero de la rama se moverá al commit más reciente.]
+
+.texto-chico[La rama principal se llama main o master, que aloja la versión oficial de nuestro proyecto, pero podemos crear tantas como queramos]
+---
+template:diapo-basica
+
+# El árbol de commits
+
+
+
+<div style="float: right;">
+<img src="imagenes/arbol_commit4.gif" width="80%" />
+</div>
+
+
+.texto-chico[El árbol de commits es una representación visual de la historia de nuestro proyecto.]
+
+
+
+.texto-chico[Nos muestra cada commit, nos permite acceder a sus contenidos y nos muestra dónde nos encontramos actualmente en la historia del árbol y dónde se encuentran las otras ramas, en caso de existir.] 
+
+
+
+.texto-chico[**¿Qué es una rama?** ]
+.texto-chico[Simplemente es un puntero a un `commit` específico, que contiene la información de sus ancestros. ]
+
+
+.texto-chico[ Si nos encontramos parados en una rama y realizamos un `commit` el puntero de la rama se moverá al commit más reciente.]
+
+.texto-chico[La rama principal se llama main o master, que aloja la versión oficial de nuestro proyecto, pero podemos crear tantas como queramos]
+
+.texto-chico[Todo software presenta alguna forma de acceder a este árbol; en el caso de Rstudio nos da acceso en Tools -> Version control -> History.]
+
+--
+
+**¡Veamos el árbol de _commits_ de nuestro proyecto actual!**
+
+
+
+---
+template:diapo-basica
+
+# Trabajando con ramas
+
+Es la forma más segura de trabajar en git: nuestro trabajo no tocará la rama principal hasta que lo decidamos
+
+--
+
+Cada desarrollador puede trabajar en una rama independiente, sin molestar a los demás
+
+--
+
+En proyectos grandes, los desarrolladores **en general** no tienen permiso para empujar directamente a la rama main/master, tienen que "pedir permiso" para hacerlo 
+
+--
+
+Existe un administrador encargado de revisar y unir (`merge`) las contribuciones a la rama central
+
+- Decide si el aporte debe incorporarse 
+
+- Resuelve conflictos
+
+--
+
+Por ahora nos centraremos en el caso básico en que tenemos total libertad de hacer
+`commit`, `push` y `pull`
+
+--
+
+**¡Creemos nuestras primeras ramas!**
+
+---
+template:diapo-basica
+
+
+
+# El .gitignore
+
+Cuando trabajamos con repositorios remotos, muchas veces existen archivos que queremos mantener solo en nuestro computador o que no son realmente compatibles con un repositorio git, por lo que no queremos subirlos a la nube:
+
+
+<div style="float: right;">
+<img src="imagenes/gitignore.png" width="90%" />
+</div>
+
+--
+
+- Archivos que no son pertinentes al objetivo del proyecto.
+
+--
+
+- Archivos temporales y de caché.
+
+--
+
+- Archivos personales (por ejemplo, .Rprofile, scripts de pruebas).
+
+--
+
+- Archivos muy grandes (por ejemplo, tablas de datos pesadas).
+
+--
+
+Estos los anotamos en el archivo .gitignore, que es un archivo de texto simple.
+
+--
+
+**Importante:** .gitignore tiene algunas notaciones particulares, pero lo más relevante es que  el * sirve como comodín
+
+--
+
+**¡Hagamos pruebas de uso del .gitignore!** 
+
+
+---
+template:diapo-basica
+
+
+
+# Recomendaciones sobre cómo interactuar con git
+
+Revisamos cómo interactuar con git a través de la terminal y RStudio
+
+--
+
+**¿Cuál es mejor?** 
+--
+No hay una respuesta correcta, depende de cada persona. La botonera es más sencilla, pero, por lo mismo, más incompleta y menos transparente.
+
+--
+
+Recomendación general: si es que les acomoda, para operaciones más sencillas (`add`, `commit`, `push`, `pull`), la botonera de RStudio basta. Si queremos dar un uso más avanzado, la terminal puede darnos más control.
+
+--
+
+Existen alternativas intermedias como GitKraken, que proporcionan una interfaz de usuario enfocada en git, permitiendo más operaciones que las posibles en la botonera de RStudio. Tarea para la casa.
+
+---
+
+template:diapo-basica
+
+
+
+# Torpedo
+
+**git add .**: poner todo en escena
+
+**git commit -m "mensaje personalizado"**: confirmar cambios
+
+**git push nombre_rama**: empujar a rama remota
+
+**git clone url_repositorio**: clonar un repositorio
+
+**git pull nombre_rama**: traer cosas del repositorio
+
+**git checkout nombre_rama**: ir a una rama
+
+**git branch**: ver todas las ramas
+
+**git branch nombre_rama**: crear una rama
+
+
+
+
+---
+template:diapo-basica
+
+
 
 # Material de consulta
 
@@ -766,15 +972,22 @@ background-position: 100% 0%
 
 
 ---
-class: center, middle
 
-.linea-superior[]
-.linea-inferior[]
-<img src="imagenes/logo_portada2.png" width="200" />
+template: portada
 
-## Capacitación en R y herramientas de productividad - nivel intermedio
+---
 
-## Proyecto estratégico Metodologías y Ciencia de Datos para la Producción Estadística
+template:diapo-basica
 
-### Noviembre 2022
+
+
+# Ejemplo de uso 
+
+
+.pull-center[
+<img src="imagenes/esquema_git.png" width="800" />
+]
+
+
+
 

@@ -87,7 +87,12 @@ h2, h3 {
 }
 
 
-
+.texto-chico {
+  font-size: 0.8rem;
+  font-family: var(--text-font-family), var(--text-font-family-fallback), var(--text-font-base);
+  font-weight: normal;
+  color: var(--text-color);
+}
 
 
 .remark-slide-content {
