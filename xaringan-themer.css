@@ -73,6 +73,9 @@ body {
   color: var(--text-color);
 }
 
+.body2 {line-height: 1.5;}
+
+
 h1 {
   font-family: var(--header-font-family);
   font-weight: 600;
