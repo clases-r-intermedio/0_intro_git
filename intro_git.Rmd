@@ -30,7 +30,7 @@ class: center, middle
 
 ## Proyecto Ciencia de Datos
 
-### Julio 2023
+## Introducción a herramientas de reproducibilidad y git
 
 
 ```{r setup, include=FALSE}
