@@ -94,20 +94,6 @@ template:diapo-basica
 
 # Problema de las rutas
 
-Existen varias razones para no usar rutas absolutas:
-
-- Dificultan el trabajo colaborativo
-
-- Hacen más difícil la reproducibilidad
-
-- Son un escollo al momento de compartir nuestro trabajo 
-
----
-template:diapo-basica
-
-
-
-# Trabajo con proyectos
 
 - Durante este curso evitaremos el uso de rutas absolutas, como
 
@@ -123,6 +109,21 @@ data <- read_csv("example_file.csv")
 ```
 
 --
+
+Existen varias razones para no usarlas:
+
+- Dificultan el trabajo colaborativo
+
+- Hacen más difícil la reproducibilidad
+
+- Son un obstáculo al momento de compartir nuestro trabajo 
+
+---
+template:diapo-basica
+
+
+# Trabajo con proyectos
+
 
 - Usaremos rutas relativas 
 
