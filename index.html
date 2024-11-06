@@ -4,7 +4,7 @@
     <title>Capacitación r intermedio</title>
     <meta charset="utf-8" />
     <meta name="author" content="" />
-    <meta name="date" content="2023-07-25" />
+    <meta name="date" content="2024-11-04" />
     <script src="intro_git_files/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
@@ -72,7 +72,7 @@ template:diapo-basica
 
 - Deben trabajar desde sus computadores personales
 
-- Deben tener una cuenta en *github*
+- Deben tener una cuenta en **gitlab**
 
 ---
 template:diapo-basica
@@ -185,7 +185,7 @@ Nos protege:
 
 - De nuestra propia estupidez
 
-- De fallas en el disco duro (podemos sincronizar nuestros cambios en la nube)
+- De fallas en el almacenamiento físico (podemos sincronizar nuestros cambios en la nube)
 
 .center[
 &lt;img src="imagenes/git.png" width="140" /&gt;
@@ -264,27 +264,41 @@ template:diapo-basica
 
 # Principales conceptos
 
-Ciclos sucesivos de *modificar, poner en escena y confirmar* van generando el historial de cambios de nuestro repositorio
+.texto-chico[Ciclos sucesivos de *modificar, poner en escena y confirmar* van generando el historial de cambios de nuestro repositorio]
 
 --
 
-Cada _commit_ es una foto del estado de nuestros archivos a la que podemos acceder cuando queramos
+.texto-chico[Cada _commit_ es una foto del estado de nuestros archivos a la que podemos acceder cuando queramos]
 
 --
 
-- **NO** podemos acceder a estados intermedios entre dos _commit_
+- .texto-chico[**NO** podemos acceder a estados intermedios entre dos _commit_]
 
 --
 
-- Queremos hacer _commit_ frecuentemente y con un número de cambios manejable
+- .texto-chico[Queremos hacer _commit_ frecuentemente y con un número de cambios manejable]
 
 --
 
-Si quiero trabajar de manera individual, no necesito más que lo que hemos visto hasta ahora
+.texto-chico[Si quiero trabajar de manera individual, no necesito más que lo que hemos visto hasta ahora]
 
 --
 
-**¿Qué pasa si necesito trabajar con más personas?**
+.center[
+&lt;img src="https://i.gifer.com/2DAN.gif" width="200" /&gt;
+]
+
+
+
+Los commit nos permiten sujetarnos a la roca 
+
+--
+
+.texto-chico[En terreno peligroso, es mejor hacer más commits.]  
+
+--
+
+.texto-chico[Si nos caemos, tendremos un punto del cual sujetarnos]
 
 
 
@@ -295,6 +309,10 @@ template:diapo-basica
 
 
 # Principales conceptos
+
+**¿Qué pasa si necesito trabajar con más personas?**
+
+--
 
 .center[
 &lt;img src="imagenes/diagrama-git.png" width="600" /&gt;
@@ -352,30 +370,6 @@ template:diapo-basica
 ]
 
 
-
----
-template:diapo-basica
-
-
-
-# Esquema de trabajo en Git
-
-
-.center[
-&lt;img src="https://i.gifer.com/2DAN.gif" width="450" /&gt;
-]
-
-
-
-Los commit nos permiten sujetarnos a la roca 
-
---
-
-En terreno peligroso, es mejor hacer más commits.  
-
---
-
-Si nos caemos, tendremos un punto del cual sujetarnos
 
 
 
@@ -560,7 +554,7 @@ template:diapo-basica
 .texto-chico[Simplemente es un puntero a un `commit` específico, que contiene la información de sus ancestros. ]
 
 
-.texto-chico[ Si nos encontramos parados en una rama y realizamos un `commit` el puntero de la rama se moverá al commit más reciente.]
+.texto-chico[ Si nos encontramos parados en una rama y realizamos un `commit`, el puntero de la rama se moverá al commit más reciente.]
 
 
 
@@ -590,7 +584,7 @@ template:diapo-basica
 
 .texto-chico[ Si nos encontramos parados en una rama y realizamos un `commit` el puntero de la rama se moverá al commit más reciente.]
 
-.texto-chico[La rama principal se llama main o master, que aloja la versión oficial de nuestro proyecto, pero podemos crear tantas como queramos]
+.texto-chico[La rama principal se llama `main` o `master` y aloja la versión oficial de nuestro proyecto, pero podemos crear tantas como queramos]
 ---
 template:diapo-basica
 
@@ -617,7 +611,7 @@ template:diapo-basica
 
 .texto-chico[ Si nos encontramos parados en una rama y realizamos un `commit` el puntero de la rama se moverá al commit más reciente.]
 
-.texto-chico[La rama principal se llama main o master, que aloja la versión oficial de nuestro proyecto, pero podemos crear tantas como queramos]
+.texto-chico[La rama principal se llama `main` o `master` y aloja la versión oficial de nuestro proyecto, pero podemos crear tantas como queramos]
 
 .texto-chico[Todo software presenta alguna forma de acceder a este árbol; en el caso de Rstudio nos da acceso en Tools -&gt; Version control -&gt; History.]
 
@@ -707,7 +701,7 @@ template:diapo-basica
 
 
 
-# Recomendaciones sobre cómo interactuar con git
+# Recomendaciones git
 
 Revisamos cómo interactuar con git a través de la terminal y RStudio
 
